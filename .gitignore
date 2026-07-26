@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/*.pyc
+.env
+venv/
+
+# Data caches (keep the JSONs for deployment)
+# data/*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WorkBuddy
+.workbuddy/
+
+# Tunnel logs
+tunnel_url.txt
