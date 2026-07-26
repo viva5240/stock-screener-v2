@@ -552,6 +552,34 @@ def index():
     return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "index.html"))
 
 
+@app.get("/manifest.json")
+def manifest():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "manifest.json"))
+
+
+@app.get("/sw.js")
+def sw():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "sw.js"))
+
+
+@app.get("/icon-192.png")
+def icon192():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "icon-192.png"))
+
+
+@app.get("/icon-512.png")
+def icon512():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "icon-512.png"))
+
+
+# ========== 启动事件 ==========
+
+
+@app.get("/icon-512.png")
+def icon512():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "frontend", "icon-512.png"))
+
+
 # ========== 启动事件 ==========
 
 @app.on_event("startup")
